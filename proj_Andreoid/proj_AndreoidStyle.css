@@ -1,0 +1,1298 @@
+*{
+    font-family:'Crimson pro', serif;
+    font-weight:400;
+    font-size: 1vw;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-color: #eeac84;
+    
+    width:100vw;
+}
+
+#canvasBack{
+    
+    position:fixed;
+    z-index:-2;
+    width:100%;
+}
+
+#canvasBack2{
+    
+    position:absolute;
+    z-index:-1;
+    width:100%;
+}
+
+#canvasBack canvas{
+    
+    width:100%;
+}
+
+#canvasBack2 canvas{
+    width:100%;
+}
+
+
+header{
+    padding-top:0vw;
+    overflow:hidden;
+}
+
+.headerUpper{
+}
+
+.headerLogoBox{
+    display:inline-block;
+    width:55%;
+    padding-top: 2vw;
+    padding-left:3vw;
+    padding-right:7vw;
+    padding-bottom:5vw;
+    margin-left:2vw;
+    margin-right:2vw;
+    margin-top:0vw;
+
+    background-image: url("paperTexture.jpg");
+
+    background-color: #cde0ced8;
+    background-blend-mode: color-burn;
+    
+    box-shadow: 10px 10px 10px 2px #00000031;
+}
+
+.headerLogoBox div {
+
+}
+
+.headerLogoBox img{
+    display:none;
+    width:60%;
+    height:50%;
+    margin: 0 0 2vw 4vw;
+    
+}
+
+p.headerLogoTxt{
+    font-weight:600;
+    font-size: 4.5vw;
+    font-style:italic;
+    margin:0vw;
+}
+
+.headerNav{
+    display:inline-block;
+    vertical-align: top;
+    position:relative;
+    bottom: 0vw;
+    padding-left:0;
+    height:10vw;
+}
+
+.headerNav div{
+    margin:1vw 0 0 10vw;
+    
+}
+
+.headerNav div button{
+    font-family:'Crimson pro', serif;
+    font-weight:400;
+    font-size: 4vw;
+    display:inline-block;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    padding: 1vw 2vw 2vw;
+    
+}
+
+h1{
+    font-family: 'Rowdies', cursive;
+
+    font-weight:300;
+    font-size: 6.2vw;
+    padding-left: 0px;
+    margin-top: 5vw ;
+    text-align:center;
+
+    color:rgb(27, 20, 99)
+}
+
+
+.subHeader{
+    overflow:hidden;
+    width:100%;
+}
+
+.subHeader section{
+    position:relative;
+    right:2vw;
+    width: 102vw;
+    margin:0;
+    margin-top:0vw;
+    
+    background-image: url("paperTexture.jpg");
+
+    background-color: #cde0ced8;
+    background-blend-mode: color-burn;
+    
+    padding: 3vw 0vw 6vw 2vw;
+    width:100vw;
+    box-shadow: 10px 10px 10px 2px #00000031;
+}
+
+.subHeaderTxt{
+
+    font-weight:500;
+    font-size: 4.8vw;
+    margin:0vw;
+    padding:2vw 2vw 0vw 6vw;
+    text-align:left;
+
+}
+
+.subHeaderTxt2{
+
+    font-weight:600;
+    font-size: 4.8vw;
+    margin:0vw;
+    padding:2vw 0vw 0vw 6vw;
+    text-align:left;
+
+}
+
+.subHeaderTxt em{
+    font-weight:700;
+    font-style:italic;
+    font-size: 5.0vw;
+    margin:0vw;
+    padding:0 1vw 0 1vw;
+    text-align:left;
+
+}
+
+.subHeaderButton{
+    padding:3vw 5vw 0vw 2vw;
+    text-align: center;
+}
+
+.subHeaderButton button{
+    background-image: radial-gradient(circle at 50% 100%, #3030af 60%, #ffffff 250%);
+    border-radius:8vw;
+    border-style: solid;
+    border-width:0.5vw;
+    border-color:#6d6dbe;
+    padding-left: 0px;
+    margin-top: 2vw ;
+    padding:5vw 8vw 6.3vw 6vw;
+}
+
+button ins{
+    font-family: 'Rowdies', cursive;
+    font-weight:300;
+    font-size: 4.5vw;
+    background: none;
+    color:#ffffff;
+    padding: 0vw 1vw 4px 2vw;
+}
+
+.designSolution{
+ 
+ position:relative;
+ margin-top:5vw;
+ padding: 0 0 7vw 0;
+ border-bottom:solid;
+ border-bottom-width: 2vw;
+ border-bottom-color: #a5b6a6;
+ border-top:solid;
+ border-top-width: 2vw;
+ border-top-color: #a5b6a6;
+ margin-bottom:7vw;
+
+ box-shadow: 2px 8px 10px 2px #00000031;
+ 
+}
+
+h2{
+    font-family:'Crimson pro', serif;
+    font-weight:900;
+    font-size: 7.5vw;
+    margin: 5vw 0 6vw 2vw;
+    
+    padding: 2vw 0 2vw 4vw;
+    text-align:left;
+
+    background-color: #cde0ce;
+    background-blend-mode: color-burn;
+    width:72vw;
+    color:rgb(158, 22, 56)
+}
+
+.cardsGrid{
+    display:grid;
+    grid-template-columns: 90vw;
+    justify-content: center;
+}
+
+.cardsGrid div[class^="cardBody"]{
+    background-color: rgb(130, 250, 240);
+    border-radius:8vw;
+    height: 50vw;
+    margin: 0vw 0vw 4vw;
+    overflow: hidden;
+    box-shadow: 8px 10px 5px 2px #00000031;
+}
+
+
+.cardsGrid div div.cardImgBox{
+    display:inline-block;
+    vertical-align: top;
+    width:25%;
+}
+
+
+.cardsGrid div img{
+    
+    width:140%;
+    border-right:solid;
+    border-width:3vw;
+    border-color:rgb(25, 194, 137);
+    position:relative;
+    right:44%;
+}
+
+
+
+div.cardTxtBox{
+    display:inline-block;
+    vertical-align: top;
+    width:66vw;
+}
+
+.cardTitleAndTxt{
+    height:38vw;
+}
+
+.cardTitle p{
+
+    margin:0vw;
+    
+    font-family: 'Rowdies', cursive;
+    font-weight:300;
+    font-size: 4.5vw;
+    padding: 2vw 2vw 0 4vw;
+    color:black;
+}
+
+.cardtext{
+    overflow:hidden;
+    height: 29vw;
+}
+
+.cardTxt p{
+
+    margin:2vw 0 0 1vw;
+    height: 23vw;
+    overflow:hidden;
+ 
+    font-family:'Crimson pro', serif;
+    font-weight:400;
+    font-size: 4.2vw;
+    padding: 0vw 0vw 0 3vw;
+    color:black;
+}
+
+.cardTxtFooter{
+    
+    background-color: rgb(95, 196, 162);
+    padding: 0vw 0vw 0 0vw;
+    margin:6vw 0 0 0;
+    width:inherit + 3vw;
+    height:10vw;
+}
+
+.cardTxtFooter p {
+    font-family:'Crimson pro', serif;
+    font-weight:500;
+    font-size: 3.8vw;
+
+    padding: 1.2vw 5vw 0 3vw;
+    text-align:right;
+    color:rgb(39, 39, 39);
+
+}
+
+
+
+#link{
+    text-align:right;
+    margin: 6vw 8vw 0 0;
+}
+
+#link a{
+    font-family:'Crimson pro', serif;
+
+    font-weight:500;
+    font-size: 6.0vw;
+}
+
+.contactDiv{
+    padding: 0 0 0 4vw;
+    margin:0;
+}
+
+.contactHeader{
+    position:relative;
+    bottom:2vw;
+}
+
+.contactTitle{
+    display:inline-block;
+    vertical-align: -2vw;
+    width:45vw;
+    height:20vw;
+    margin:0;
+    padding:0;
+}
+
+.contactHeaderButton{
+    display:inline-block;
+    vertical-align: text-bottom;
+
+    margin: 6vw 0 0 10vw;
+}
+
+.contactHeaderButton button{
+    font-family: 'Rowdies', cursive;
+    font-weight:900;
+    font-size: 4.5vw;
+    padding:2vw;
+}
+
+.contactTitle p{
+    font-family: 'Rowdies', cursive;
+    font-weight:300;
+    font-size: 5.5vw;
+}
+
+form div{
+    margin:0;
+    padding:0 0 1vw 0;
+}
+
+form.form div label{
+    font-family:'Crimson pro', serif;
+    font-weight:500;
+    font-size: 4.8vw;
+}
+
+input{
+    width:80vw;
+    height:3.5vw;
+}
+
+select{
+    width:70vw;
+    height:6vw;
+}
+
+select option{
+    height:6vw;
+    font-size: 4vw;;
+}
+
+textarea{
+    width:70vw;
+    height:20vw;
+}
+
+.form div.button{
+    width:90vw;
+}
+
+.form div button{
+    display:float;
+    float:right;
+    border-radius:8vw;
+    margin:5vw 0 0 10vw;
+    padding:3vw;
+    font-family: 'Rowdies', cursive;
+    font-weight:900;
+    font-size: 4.5vw;
+    
+}
+
+.contactInfo{
+    margin-top:8vw;
+    padding-bottom:6vw;
+}
+
+.contactInfo div p{
+    font-family:'Crimson pro', serif;
+    font-weight:500;
+    font-size: 4.8vw;
+    margin:0vw;
+}
+
+.about{
+    margin-top:2vw;
+    padding-top:1vw;
+    background-color:#8ac1ffb2;
+}
+
+.aboutTitle{
+    padding-left: 8vw;
+}
+
+.aboutTitle p{
+    font-family:'Crimson pro', serif;
+    font-weight:900;
+    font-size: 8vw;
+    color:rgb(148, 28, 74);
+    text-shadow: 1.5vw 2vw 0 #9ebbe6, 1.6vw 2.1vw 0 rgb(148, 28, 74), 1.4vw 1.9vw 0 rgb(148, 28, 74), 1.8vw 2.3vw 0vw rgb(148, 28, 74);
+}
+
+.portraitDiv{
+    overflow: hidden;
+    height:79vw;
+    border-top:solid;
+    border-bottom:solid;
+}
+
+.portraitDiv img{
+    width:75vw;
+    padding:0vw 12vw 0vw;
+    
+}
+
+.aboutMeTxt p{
+    padding: 0 5.5vw 0 6vw;
+    margin: 3vw 0 0 0;
+    text-align:left;
+
+    font-family:'Crimson pro', serif;
+    font-weight:400;
+    font-size: 5vw;
+    padding-bottom:10vw;
+}
+
+.aboutMeTxt p em{
+    font-size: 5.2vw;
+}
+
+.aboutMeTxt p ins{
+    font-size: 5vw;
+}
+
+.aboutMeTxt p b{
+    font-family: 'Rowdies', cursive;
+    font-weight:300;
+    font-size: 10vw;
+    margin: 0;
+    padding:0;
+    color:rgb(148, 28, 74);
+}
+
+#b2{
+    font-family:'Crimson pro', serif;
+    font-weight:900;
+    font-size: 5.2vw;
+    margin: 0;
+    padding:0;
+    color:rgb(0, 0, 0);
+}
+
+#b3{
+    font-family: 'Rowdies', cursive;
+    font-weight:900;
+    font-size: 4.8vw;
+    margin: 0;
+    padding:0;
+
+    color:rgb(0, 0, 0);
+}
+
+.date p{
+    display:none;
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 4.8vw;
+    margin: 0 10vw 10 ;
+    text-align: right;
+}
+
+.more{
+
+    display:none;
+    background-color: #99a0a5;
+
+    padding: 8vw 0 5vw 0;
+}
+
+.more div{
+    
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.more button{
+    padding:2vw 22vw 4vw 20vw;
+    font-family:'Crimson pro', serif;
+    font-weight:900;
+    font-size: 8vw;
+    text-shadow: 1.5vw 1vw 0 #bdbdbd, 1.6vw 1.1vw 0 #000, 1.4vw 0.9vw 0 #000, 1.8vw 1.3vw 0vw #000;
+}
+
+.more p{
+    display:none;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div.socialMedia{
+    margin-left: 3vw;
+    margin-bottom:0;
+    padding:0;
+    
+}
+
+.socialMedia p{
+    font-family:'Crimson pro', serif;
+    font-weight:700;
+    font-size: 5.2vw;
+    margin-left: 2vw;
+    margin-bottom:4vw;
+    padding:0;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.socialMedia a{
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 4.5vw;
+    margin:0;
+
+    padding: 0 1.2vw 0vw 1.2vw ;
+}
+
+.credits p{
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 4vw;
+    margin: 5vw 8vw 12vw ;
+    padding:0;
+    text-align: center;
+}
+
+
+
+.threeDiv{
+
+    display:block;
+    
+
+}
+
+.headerProjs{
+    background-color: #9ebbe6;
+    width:100vw;
+   
+    text-align: justify;
+    box-shadow: 2px 10px 10px 2px #00000031;
+}
+
+.headerUpperProjs{
+    width:100%;
+    align-content: right;
+    
+    margin: 2vw 0 6vw 0 ;
+}
+
+.headerUpperProjs div{
+    display: inline-block;
+
+}
+
+
+.breadCrumb{
+    padding:0vw 2vw 0vw 4vw;
+
+    
+    
+    width:60vw;
+
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 4vw;
+}
+
+.breadCrumb span{
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 5vw;
+}
+
+
+.breadCrumb a{
+    font-family:'Crimson pro', serif;
+    font-weight:300;
+    font-size: 5vw;
+}
+
+.headerUpperProjs div div{
+    margin: 2vw 0 4vw 4vw;
+}
+
+.headerUpperProjs div div p{
+    font-size: 3.5vw;
+}
+
+
+.h1DivProjs{
+
+
+}
+
+.h1DivProjs h1{
+    width:80vw;
+    text-align: center;
+    margin: 0 auto 0 8vw;
+}
+
+.projDate{
+    font-family:'Crimson pro', serif;
+    font-weight:500;
+    font-size: 3.5vw;
+    font-style:italic;
+    margin:2vw 6vw 4vw;
+    padding:0 0 0vw;
+    text-align: right;
+    color: rgb(14, 173, 120);
+}
+
+
+#ID3D{
+
+    
+
+    overflow:hidden;
+    width: 90vw;
+    height:90vw;
+    margin: 4vw auto 4vw auto;
+    justify-content: center;
+    
+
+}
+
+#ID3D p{
+    position:absolute;
+    text-align: right;
+
+    font-family:'Crimson pro', serif;
+    font-weight:900;
+    font-size: 4vw;
+    margin:78vw 0 0 44vw;
+    padding:0;
+    color:#3030af
+}
+
+#modelControls{
+
+    display:none;
+    width:100vw;
+    overflow: visible;
+    vertical-align: top;
+    margin:0;
+
+}
+
+
+
+.projDescription{
+    position:relative;
+    bottom:10vw;
+
+    margin: 2vw 0vw 4vw 0vw;
+    
+    width: 100%;
+    background-color: #9ebbe6;
+}
+
+.projDescription p{
+
+    padding: 4vw 4vw 20vw;
+    font-family:'Crimson pro', serif;
+    font-weight:400;
+    font-size: 4vw;
+}
+
+.projDescription p em{
+
+    padding:.5vw;;
+    font-family:'Crimson pro', serif;
+    font-weight:600;
+    font-size: 4.2vw;
+    font-style: normal;
+}
+
+.projDescription p a{
+
+    padding:.5vw;;
+    font-family:'Crimson pro', serif;
+    font-weight:700;
+    font-size: 4.2vw;
+    font-style: italic;
+}
+
+
+@media only screen and (min-width: 600px){
+
+    header{
+        padding-top:0vw;
+        overflow:hidden;
+    }
+    
+    .headerUpper{
+        
+    }
+    
+    .headerLogoBox{
+        display:inline-block;
+        width:42%;
+        padding-top: 2vw;
+        padding-left:3vw;
+        padding-right:7vw;
+        padding-bottom:4vw;
+        margin-left:2vw;
+        margin-right:0vw;
+        margin-top:0vw;
+    
+        background-image: url("paperTexture.jpg");
+    
+        background-color: #cde0ced8;
+        background-blend-mode: color-burn;
+        
+        box-shadow: 10px 10px 10px 2px #00000031;
+        
+    }
+    
+    .headerLogoBox div {
+    
+    }
+    
+    .headerLogoBox img{
+        display:none;
+        width:60%;
+        height:50%;
+        margin: 0 0 2vw 4vw;
+        
+    }
+    
+    p.headerLogoTxt{
+        font-weight:600;
+        font-size: 3.5vw;
+        font-style:italic;
+        margin:0vw;
+    }
+    
+    .headerNav{
+        display:inline-block;
+        vertical-align: top;
+        position:relative;
+        bottom: 0vw;
+        padding-left:0;
+        height:10vw;
+    }
+    
+    .headerNav div{
+        margin:1vw 0 0 25vw;
+        
+    }
+    
+    .headerNav div button{
+        font-family:'Crimson pro', serif;
+        font-weight:400;
+        font-size: 4vw;
+        display:inline-block;
+        padding-right: 0vw;
+        padding-left: 0vw;
+        padding: 1vw 2vw 2vw;
+        text-align: right;
+        
+    }
+    
+    h1{
+        font-family: 'Rowdies', cursive;
+    
+        font-weight:400;
+        font-size: 5.0vw;
+        padding-left: 6vw;
+        margin-top: 5vw ;
+        text-align:left;
+    
+        color:rgb(27, 20, 99)
+    }
+    
+    
+    .subHeader{
+        overflow:hidden;
+        width:100%;
+    }
+    
+    .subHeader section{
+        position:relative;
+
+        width: 100vw;
+        margin:0;
+        margin-top:0vw;
+        
+        background-image: url("paperTexture.jpg");
+    
+        background-color: #cde0ced8;
+        background-blend-mode: color-burn;
+        
+        padding: 1vw 0vw 4vw 2vw;
+        width:100vw;
+        box-shadow: 10px 10px 10px 2px #00000031;
+    }
+    
+    .subHeaderTxt{
+    
+        font-weight:500;
+        font-size: 3.0vw;
+        margin:0vw;
+        padding:2vw 2vw 0vw 4vw;
+        text-align:left;
+    
+    }
+    
+    .subHeaderTxt2{
+    
+        font-weight:600;
+        font-size: 3.0vw;
+        margin:0vw;
+        padding:2vw 0vw 0vw 4vw;
+        text-align:left;
+    
+    }
+    
+    .subHeaderTxt em{
+        font-weight:700;
+        font-style:italic;
+        font-size: 3.2vw;
+        margin:0vw;
+        padding:0 0.5vw 0 0.5vw;
+        text-align:left;
+    
+    }
+    
+    .subHeaderButton{
+        padding:3vw 5vw 0vw 2vw;
+        text-align: right;
+    }
+    
+    .subHeaderButton button{
+        background-image: radial-gradient(circle at 50% 100%, #3030af 60%, #ffffff 250%);
+        border-radius:8vw;
+        border-style: solid;
+        border-width:0.5vw;
+        border-color:#6d6dbe;
+        padding-left: 0px;
+        margin-top: 6vw ;
+        padding:3vw 4vw 3.5vw 2vw;
+    }
+    
+    button ins{
+        font-family: 'Rowdies', cursive;
+        font-weight:300;
+        font-size: 2.8vw;
+        background: none;
+        color:#ffffff;
+        padding: 0vw 1vw 4px 2vw;
+    }
+
+    .designSolution{
+        
+        position:relative;
+        margin-top:5vw;
+        padding: 0 0 2vw 0;
+        border-bottom:solid;
+        border-bottom-width: 2vw;
+        border-bottom-color: #a5b6a6;
+        border-top:solid;
+        border-top-width: 2vw;
+        border-top-color: #a5b6a6;
+        margin-bottom:2vw;
+       
+        box-shadow: 2px 8px 10px 2px #00000031;
+        
+       }
+       
+       h2{
+           font-family:'Crimson pro', serif;
+           font-weight:900;
+           font-size: 5vw;
+           margin: 2vw 0 4vw 2vw;
+           
+           padding: 2vw 0 2vw 2vw;
+           text-align:left;
+       
+           background-color: #cde0ce;
+           background-blend-mode: color-burn;
+           width:60vw;
+           color:rgb(158, 22, 56)
+       }
+       
+       .cardsGrid{
+           display:grid;
+           grid-template-columns: 80vw ;
+           justify-content: enter;
+           margin: 0 1.5vw 0 1.5vw;
+       }
+       
+       .cardsGrid div[class^="cardBody"]{
+           background-color: rgb(130, 250, 240);
+           border-radius:6vw;
+           height: 32vw;
+           margin: 0vw 0vw 4vw;
+           overflow: hidden;
+           box-shadow: 8px 10px 5px 2px #00000031;
+       }
+       
+       
+       .cardsGrid div div.cardImgBox{
+           display:inline-block;
+           vertical-align: top;
+           width:29%;
+       }
+       
+       
+       .cardsGrid div img{
+           
+           width:150%;
+           border-right:solid;
+           border-width:1.5vw;
+           border-color:rgb(25, 194, 137);
+           position:relative;
+           right:54%;
+       }
+       
+       
+       
+       div.cardTxtBox{
+           display:inline-block;
+           vertical-align: top;
+           width:52vw;
+       }
+       
+       .cardsGrid div p.cardTitle{
+       
+           margin:0vw;
+           
+           font-family: 'Rowdies', cursive;
+           font-weight:300;
+           font-size: 3.5vw;
+           padding: 2vw 2vw 0 2vw;
+       }
+       
+       .cardsGrid div p.cardTxt{
+       
+           margin:2vw 0 0 0;
+           height: 18vw;
+        
+           font-family:'Crimson pro', serif;
+           font-weight:400;
+           font-size: 3.2vw;
+           padding: 0vw 0vw 0 2vw;
+       }
+       
+       .cardTxtFooter{
+           
+           background-color: rgb(95, 196, 162);
+           width:60vw;
+           padding: 0vw 0vw 0 0vw;
+           margin:0;
+           height:6vw;
+       }
+       
+       .cardTxtFooter p {
+           font-family:'Crimson pro', serif;
+           font-weight:500;
+           font-size: 2.5vw;
+       
+           padding: 0.5vw 8vw 0 1vw;
+           text-align:right;
+           color:rgb(39, 39, 39);
+       }
+       
+       #link{
+           text-align:right;
+           margin: 2vw 8vw 0 0;
+       }
+       
+       #link a{
+           font-family:'Crimson pro', serif;
+       
+           font-weight:500;
+           font-size: 3.8vw;
+       }
+
+       .contactDiv{
+        margin:0 0 0vw ;
+        padding-bottom:2vw;
+       }
+
+       .contactTitle{
+        display:inline-block;
+        vertical-align: 0vw;
+        width:45vw;
+        height:10vw;
+        margin:0 0 5vw;
+        padding:0;
+    }
+    
+    .contactHeaderButton{
+        display:inline-block;
+        vertical-align: text-bottom;
+    
+        margin: 0vw 0 0 15vw;
+       
+    }
+    
+    .contactHeaderButton button{
+        font-family: 'Rowdies', cursive;
+        font-weight:900;
+        font-size: 3.5vw;
+        padding:2vw;
+        
+    }
+    
+    .contactTitle p{
+        font-family: 'Rowdies', cursive;
+        font-weight:300;
+        font-size: 4.0vw;
+    }
+    
+    form div{
+        margin:0;
+        padding:0 0 1vw 0;
+    }
+    
+    form.form div label{
+        font-family:'Crimson pro', serif;
+        font-weight:500;
+        font-size: 3.2vw;
+    }
+    
+    input{
+        width:60vw;
+        height:3.5vw;
+        
+    }
+    
+    select{
+        width:40vw;
+        height:5vw;
+    }
+    
+    textarea{
+        width:80vw;
+        height:15vw;
+    }
+    
+    .form div.button{
+        width:90vw;
+    }
+    
+    .form div button{
+        display:float;
+        float:right;
+        border-radius:8vw;
+        margin:3vw 0 0vw 10vw;
+        padding:3vw;
+        font-family: 'Rowdies', cursive;
+        font-weight:900;
+        font-size: 3.5vw;
+        
+    }
+    
+    .contactInfo{
+        margin-top:6vw;
+        padding-bottom:5w;
+    }
+    
+    .contactInfo div p{
+        font-family:'Crimson pro', serif;
+        font-weight:500;
+        font-size: 3.2vw;
+        margin:0 0 0vw;
+    }
+
+    .about{
+        margin-top:0vw;
+        padding-top:0.01vw;
+        background-color:#8ac1ffb2;
+    }
+    
+    .aboutTitle{
+        padding-left: 8vw;
+    }
+    
+    .aboutTitle p{
+        font-family:'Crimson pro', serif;
+        font-weight:900;
+        font-size: 6vw;
+        color:rgb(148, 28, 74);
+        text-shadow: 1.5vw 2vw 0 #9ebbe6, 1.6vw 2.1vw 0 rgb(148, 28, 74), 1.4vw 1.9vw 0 rgb(148, 28, 74), 1.8vw 2.3vw 0vw rgb(148, 28, 74);
+    }
+    
+    .portraitDiv{
+        overflow: hidden;
+        height:53vw;
+        justify-content: center;
+        align-content: center;
+        border-top:solid;
+        border-bottom:solid;
+    }
+    
+    .portraitDiv img{
+        width:50vw;
+        padding:0vw 12vw 0vw;
+        
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .aboutMeTxt p{
+        
+        padding: 0 5.5vw 0 6vw;
+        margin: 3vw 0 0 0;
+        text-align:left;
+    
+        font-family:'Crimson pro', serif;
+        font-weight:400;
+        font-size: 4vw;
+        padding-bottom:6vw;
+    }
+
+    .aboutMeTxt p em{
+        font-size: 4.2vw;
+    }
+
+    .aboutMeTxt p ins{
+        font-size: 4vw;
+    }
+    
+    .aboutMeTxt p b{
+        font-family: 'Rowdies', cursive;
+        font-weight:300;
+        font-size: 8vw;
+        margin: 0;
+        padding:0;
+    }
+    
+    #b2{
+        font-family:'Crimson pro', serif;
+        font-weight:900;
+        font-size: 4.2vw;
+        margin: 0;
+        padding:0;
+    }
+    
+    #b3{
+        font-family: 'Rowdies', cursive;
+        font-weight:900;
+        font-size: 4.0vw;
+        margin: 0;
+        padding:0;
+    }
+    
+    .date p{
+        display:none;
+        font-family:'Crimson pro', serif;
+        font-weight:300;
+        font-size: 4.8vw;
+        margin: 0 10vw 10 ;
+        text-align: right;
+    }
+
+    .more{
+
+        display:none;
+        background-color: #99a0a5;
+    
+        padding: 8vw 0 5vw 0;
+    }
+    
+    .more div{
+        
+        text-align: center;
+        align-content: center;
+    }
+    
+    
+    
+    .more button{
+        padding:2vw 22vw 4vw 20vw;
+        font-family:'Crimson pro', serif;
+        font-weight:900;
+        font-size: 8vw;
+        text-shadow: 1.5vw 1vw 0 #bdbdbd, 1.6vw 1.1vw 0 #000, 1.4vw 0.9vw 0 #000, 1.8vw 1.3vw 0vw #000;
+    }
+    
+    .more p{
+        display:none;
+    }
+    
+    footer{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    div.socialMedia{
+        margin-left: 3vw;
+        margin-bottom:0;
+        padding:0;
+        
+    }
+    
+    .socialMedia p{
+        font-family:'Crimson pro', serif;
+        font-weight:700;
+        font-size: 4.2vw;
+        margin-left: 2vw;
+        margin-bottom:4vw;
+        padding:0;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .socialMedia a{
+        display:inline-block;
+        font-family:'Crimson pro', serif;
+        font-weight:300;
+        font-size: 4.0vw;
+        margin:0 auto 0 auto;
+
+        
+    
+        padding: 0 2.2vw 0vw 2.2vw ;
+    }
+    
+    .credits p{
+        font-family:'Crimson pro', serif;
+        font-weight:300;
+        font-size: 3vw;
+        margin: 5vw 8vw 12vw ;
+        padding:0;
+        text-align: center;
+    }
+
+}
