@@ -109,37 +109,37 @@
                                 <!-- Full-width images with number and caption text -->
                                 <div class="mySlides fade">
                                 <div class="numbertext">1 / 6</div>
-                                <img src="proj_Andreoid/andreoid_04.png" style="width:100%">
+                                <img src="./proj_Andreoid/andreoid_04.png" style="width:100%">
                                 <div class="text"></div>
                                 </div>
                             
                                 <div class="mySlides fade">
                                 <div class="numbertext">2 / 6</div>
-                                <img src="proj_Andreoid/andreoid_05.png" style="width:100%">
+                                <img src="./proj_Andreoid/andreoid_05.png" style="width:100%">
                                 <div class="text"></div>
                                 </div>
                             
                                 <div class="mySlides fade">
                                 <div class="numbertext">3 / 6</div>
-                                <img src="proj_Andreoid/andreoid_07.png" style="width:100%">
+                                <img src="./proj_Andreoid/andreoid_07.png" style="width:100%">
                                 <div class="text"></div>
                                 </div>
         
                                 <div class="mySlides fade">
                                     <div class="numbertext">4 / 6</div>
-                                    <img src="proj_Andreoid/andreoid_08.png" style="width:100%">
+                                    <img src="./proj_Andreoid/andreoid_08.png" style="width:100%">
                                     <div class="text"></div>
                                 </div>
         
                                 <div class="mySlides fade">
                                     <div class="numbertext">5 / 6</div>
-                                    <img src="proj_Andreoid/andreoid_404_3.png" style="width:100%">
+                                    <img src="./proj_Andreoid/andreoid_404_3.png" style="width:100%">
                                     <div class="text"></div>
                                 </div>
         
                                 <div class="mySlides fade">
                                     <div class="numbertext">6 / 6</div>
-                                    <img src="proj_Andreoid/andreoid_404.png" style="width:100%">
+                                    <img src="./proj_Andreoid/andreoid_404.png" style="width:100%">
                                     <div class="text"></div>
                                 </div>
                             
@@ -182,31 +182,31 @@
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides2 fade">
                         <div class="numbertext2">1 / 5</div>
-                        <img src="proj_Andreoid/makeOf_1.jpg" style="width:100%">
+                        <img src="./proj_Andreoid/makeOf_1.jpg" style="width:100%">
                         <div class="text"></div>
                         </div>
                     
                         <div class="mySlides2 fade">
                         <div class="numbertext2">2 / 5</div>
-                        <img src="proj_Andreoid/makeOf_2.jpg" style="width:100%">
+                        <img src="./proj_Andreoid/makeOf_2.jpg" style="width:100%">
                         <div class="text"></div>
                         </div>
                     
                         <div class="mySlides2 fade">
                         <div class="numbertext2">3 / 5</div>
-                        <img src="proj_Andreoid/makeOf_3.jpg" style="width:100%">
+                        <img src="./proj_Andreoid/makeOf_3.jpg" style="width:100%">
                         <div class="text"></div>
                         </div>
 
                         <div class="mySlides2 fade">
                             <div class="numbertext2">4 / 5</div>
-                            <img src="proj_Andreoid/makeOf_4.jpg" style="width:100%">
+                            <img src="./proj_Andreoid/makeOf_4.jpg" style="width:100%">
                             <div class="text"></div>
                         </div>
 
                         <div class="mySlides2 fade">
                             <div class="numbertext2">5 / 5</div>
-                            <img src="proj_Andreoid/makeOf_5.png" style="width:100%">
+                            <img src="./proj_Andreoid/makeOf_5.png" style="width:100%">
                             <div class="text"></div>
                         </div>
                     
@@ -237,6 +237,133 @@
 
 </div>
 
+        
+
+<script>
+    let slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+   console.log("botao");
+ }
+ 
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+ 
+ function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   console.log(slides);
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+ } 
+ 
+ let slideIndex2 = 1;
+ showSlides2(slideIndex2);
+ 
+ // Next/previous controls
+ function plusSlides2(n) {
+   showSlides2(slideIndex2 += n);
+   console.log("botao");
+ }
+ 
+ // Thumbnail image controls
+ function currentSlide2(n) {
+   showSlides2(slideIndex2 = n);
+ }
+ 
+ function showSlides2(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides2");
+   let dots = document.getElementsByClassName("dot2");
+   console.log(slides);
+   if (n > slides.length) {slideIndex2 = 1}
+   if (n < 1) {slideIndex2 = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active2", "");
+   }
+   slides[slideIndex2-1].style.display = "block";
+   dots[slideIndex2-1].className += " active2";
+ }
+ 
+ function war(){
+     let ele = document.getElementById("XMLID_1_");
+     //ele.points = ele.points.replace("368.1", "40");
+     ele.getAttributeNS(null, 'points');
+     //console.log(ele.getAttributeNS(null, 'points'));
+     //ele.setAttributeNS(null, 'points', "-99.8,40.1 310.2,-6.4 909.8,71.7 1013,470.5 540,552.9 ");
+     let ttt = ele.getAttributeNS(null, 'points');
+     let rrr = ttt.split(/,| /);
+     let coordsFloats = [rrr.length-2];
+     let coordsPlus = [rrr.length-2];
+     let fCoords = [rrr.length-2];
+ 
+     //console.log(ttt);
+     //console.log(rrr);
+     //console.log(coordsPlus.length);
+     //console.log(rrr.length);
+ 
+     let timeCounter = 0;
+     timeCounter += 1;
+ 
+     for(let l = 0; l<rrr.length-1; l++){
+ 
+ 
+         coordsPlus[l] = Math.sin((((2*Math.PI)/rrr.length)*l)+timeCounter)*0.5;
+         coordsFloats[l] = parseFloat(rrr[l]);
+         fCoords[l] = coordsPlus[l] + coordsFloats[l];
+ 
+     }
+ 
+     
+ 
+ 
+     let fString = (fCoords[0].toString())+","+(fCoords[1].toString())+" "+(fCoords[2].toString())+","+(fCoords[3].toString())+" "+(fCoords[4].toString())+","+(fCoords[5].toString())+" "+(fCoords[6].toString())+","+(fCoords[7].toString())+" "+(fCoords[8].toString())+","+(fCoords[9].toString())+" ";
+     
+     //console.log(fCoords[0].toString());
+     //console.log(fString);
+ 
+     ele.setAttributeNS(null, 'points', fString);
+ 
+     requestAnimationFrame(war);
+ }
+ 
+ 
+ 
+ function menuShow(){
+ 
+     let popMenu1 = document.getElementById("popMenu");
+     popMenu1.classList.toggle("show");
+     popMenu1.style.visibility = "visible";
+     console.log("AAAAAAAAAAAAAAA");
+ 
+ 
+ }
+ 
+ function menuHide(){
+     let popMenu1 = document.getElementById("popMenu");
+     popMenu1.style.visibility = "hidden";
+ }
+ 
+ console.log("fim");
+     </script>
+        
         <script type="module">
             import * as THREE from './three.module.js';
             import { GLTFLoader } from './GLTFLoader.js';
@@ -322,7 +449,7 @@ var mobile = window.mobileCheck();
         scene.add( backLight );
 
         const texLoader = new THREE.TextureLoader();
-        const shadowTexture = texLoader.load('proj_Andreoid/shadow.png');
+        const shadowTexture = texLoader.load('./proj_Andreoid/shadow.png');
         const shadowGeo = new THREE.PlaneGeometry(1, 1);
 
         const shadowMat = new THREE.MeshBasicMaterial({
@@ -340,7 +467,7 @@ var mobile = window.mobileCheck();
 
 
 
-        const hdrEquirect = new RGBELoader().load( 'proj_Andreoid/park_parking_1k.hdr', function () {
+        const hdrEquirect = new RGBELoader().load( './proj_Andreoid/park_parking_1k.hdr', function () {
 
 					hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
 
@@ -1042,133 +1169,6 @@ animate();
 //-----------------------------------------------------------------------------------------------^^^^--THREE.js--^^^^----------------------------------------------------------^-
 
         </script>
-
-<script>
-    let slideIndex = 1;
- showSlides(slideIndex);
- 
- // Next/previous controls
- function plusSlides(n) {
-   showSlides(slideIndex += n);
-   console.log("botao");
- }
- 
- // Thumbnail image controls
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   let i;
-   let slides = document.getElementsByClassName("mySlides");
-   let dots = document.getElementsByClassName("dot");
-   console.log(slides);
-   if (n > slides.length) {slideIndex = 1}
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";
-   }
-   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
-   }
-   slides[slideIndex-1].style.display = "block";
-   dots[slideIndex-1].className += " active";
- } 
- 
- let slideIndex2 = 1;
- showSlides2(slideIndex2);
- 
- // Next/previous controls
- function plusSlides2(n) {
-   showSlides2(slideIndex2 += n);
-   console.log("botao");
- }
- 
- // Thumbnail image controls
- function currentSlide2(n) {
-   showSlides2(slideIndex2 = n);
- }
- 
- function showSlides2(n) {
-   let i;
-   let slides = document.getElementsByClassName("mySlides2");
-   let dots = document.getElementsByClassName("dot2");
-   console.log(slides);
-   if (n > slides.length) {slideIndex2 = 1}
-   if (n < 1) {slideIndex2 = slides.length}
-   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";
-   }
-   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active2", "");
-   }
-   slides[slideIndex2-1].style.display = "block";
-   dots[slideIndex2-1].className += " active2";
- }
- 
- function war(){
-     let ele = document.getElementById("XMLID_1_");
-     //ele.points = ele.points.replace("368.1", "40");
-     ele.getAttributeNS(null, 'points');
-     //console.log(ele.getAttributeNS(null, 'points'));
-     //ele.setAttributeNS(null, 'points', "-99.8,40.1 310.2,-6.4 909.8,71.7 1013,470.5 540,552.9 ");
-     let ttt = ele.getAttributeNS(null, 'points');
-     let rrr = ttt.split(/,| /);
-     let coordsFloats = [rrr.length-2];
-     let coordsPlus = [rrr.length-2];
-     let fCoords = [rrr.length-2];
- 
-     //console.log(ttt);
-     //console.log(rrr);
-     //console.log(coordsPlus.length);
-     //console.log(rrr.length);
- 
-     let timeCounter = 0;
-     timeCounter += 1;
- 
-     for(let l = 0; l<rrr.length-1; l++){
- 
- 
-         coordsPlus[l] = Math.sin((((2*Math.PI)/rrr.length)*l)+timeCounter)*0.5;
-         coordsFloats[l] = parseFloat(rrr[l]);
-         fCoords[l] = coordsPlus[l] + coordsFloats[l];
- 
-     }
- 
-     
- 
- 
-     let fString = (fCoords[0].toString())+","+(fCoords[1].toString())+" "+(fCoords[2].toString())+","+(fCoords[3].toString())+" "+(fCoords[4].toString())+","+(fCoords[5].toString())+" "+(fCoords[6].toString())+","+(fCoords[7].toString())+" "+(fCoords[8].toString())+","+(fCoords[9].toString())+" ";
-     
-     //console.log(fCoords[0].toString());
-     //console.log(fString);
- 
-     ele.setAttributeNS(null, 'points', fString);
- 
-     requestAnimationFrame(war);
- }
- 
- 
- 
- function menuShow(){
- 
-     let popMenu1 = document.getElementById("popMenu");
-     popMenu1.classList.toggle("show");
-     popMenu1.style.visibility = "visible";
-     console.log("AAAAAAAAAAAAAAA");
- 
- 
- }
- 
- function menuHide(){
-     let popMenu1 = document.getElementById("popMenu");
-     popMenu1.style.visibility = "hidden";
- }
- 
- console.log("fim");
-     </script>
-        
-
 
     
     
