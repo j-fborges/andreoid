@@ -813,11 +813,8 @@ div.socialMedia{
 }
 
 #ID3D{
-
-    
-
     overflow:hidden;
-    width: 90vw;
+    width: 150vw;
     height:80vw;
     margin: 4vw auto 4vw auto;
     justify-content: center;
@@ -832,7 +829,7 @@ div.socialMedia{
     font-family:'Crimson pro', serif;
     font-weight:900;
     font-size: 4vw;
-    margin:78vw 0 0 44vw;
+    margin:90vw 0 0 auto;
     padding:0;
     color:#3030af
 }
@@ -898,7 +895,7 @@ div.socialMedia{
     position: relative;
     
 
-    margin: 0 auto 4vw 0;
+    margin: 0 auto 4vw 50vw;
     padding: 4vw 4vw 2vw 4vw;
     overflow: hidden;
 
@@ -993,21 +990,15 @@ div.socialMedia{
   /* Slideshow2222------------------------------------------------------vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv----------*/
 
 
-.slide2{
-    background-color: #9ebbe6;
-    padding: 0vw 0 2vw;
-    margin:0;
-}
-
 /* Slideshow container */
 .slideshow-container2 {
-    max-width: 100vw;
+    max-width: 40vw;
     position: relative;
     
 
-    margin: 0vw auto 4vw 0;
+    margin: 0vw 0 4vw 60vw;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
   }
   
@@ -1848,7 +1839,6 @@ div.socialMedia{
         font-family:'Crimson pro', serif;
         font-weight:900;
         font-size: 3.0vw;
-        margin:480px 0 0 55vw;
         padding:0;
         color:#3030af
     }
@@ -2007,12 +1997,6 @@ div.socialMedia{
 
     /* Slideshow2222------------------------------------------------------vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv----------*/
 
-
-    .slide2{
-        background-color: #9ebbe6;
-        padding: 0 2vw 2vw;
-        margin:0;
-    }
 
     /* Slideshow container */
     .slideshow-container2 {
@@ -2912,6 +2896,7 @@ div.socialMedia{
             display:inline-block;
             vertical-align: top;
             height:20vw;
+            /* width: 60vw; */
             
         }
     
@@ -2919,7 +2904,7 @@ div.socialMedia{
             direction: ltr;
     
             overflow:hidden;
-            width:30vw;
+            width:50vw;
             height:29vw;
             margin: 0vw 0.5vw 0vw 0.5vw;
             justify-content: left;
@@ -2950,7 +2935,7 @@ div.socialMedia{
         .projDescription{
             margin:0;
             padding: 0 0 0vw 0;
-            width:84vw;
+            width: 100%;
             background-color: #eeac84;  /* #18a08e; */
             
         }
@@ -2970,7 +2955,7 @@ div.socialMedia{
 
             direction: ltr;
             margin: 0vw 0vw 0vw 0vw;
-            width:44vw;
+            width:40vw;
             height:25vw;
     
             padding: 2vw 5vw 3vw 4vw;
@@ -3008,7 +2993,7 @@ div.socialMedia{
             font-family:'Crimson pro', serif;
             font-weight:900;
             font-size: 1.4vw;
-            margin:28vw 0 0 12vw;
+            margin:28vw 0 0 0vw;
             padding:0;
             color:#3030af;
             background-color: none;
@@ -3019,7 +3004,7 @@ div.socialMedia{
             background-color: #9ebbe6;
             box-shadow: 2px 10px 10px 2px #00000031, 2px -10px 10px 2px #00000031;
             height:4vw;
-            width:90vw;
+            width:100%;
             margin:0;
         }
 
@@ -3143,14 +3128,14 @@ div.socialMedia{
 
         .paragraph2Txt{
             display: inline-block;
-            width:30vw;
+            width:50vw;
         }
 
         .paragraph2Txt p{
 
             direction: ltr;
             margin: 0vw 0vw 0vw 0vw;
-            width:35vw;
+            width:50vw;
             height:25vw;
 
             text-align: left;
@@ -3171,10 +3156,11 @@ div.socialMedia{
         .slide2{
     
             background-color: #9ebbe6;
-            padding: 0 0.5vw 2vw;
-            margin:0;
             z-index: 50;
             position: relative;
+            padding: 0 0 0 45vw;
+            justify-content: center;
+            align-content: center;
         }
     
         /* Slideshow container */
