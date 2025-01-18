@@ -10,93 +10,335 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet"> 
     
     <title>J.F.Borges</title>
-  <script type="module" crossorigin src="/andreoid/assets/index-UCgf0Qj5.js"></script>
+  <script type="module" crossorigin src="/andreoid/assets/index-B-hmmUVL.js"></script>
   <link rel="stylesheet" crossorigin href="/andreoid/assets/index-CCZo9Ku_.css">
 </head>
 <body class="pageBody" id="bd">
 
-    <div id="canvasBack"></div>
- 
-    <header>
-        <div class="headerUpper">
-            <section class="headerLogoBox">
+    <div class="navMenu" id="popMenu" >
+            
+        <button class="close" onclick="menuHide()">X</button>
 
-            <!--  <img src="./signed.png" alt="Signature"> -->
-                  <p class="headerLogoTxt">João Pedro Fernandes Borges</p>
-                  <p class="headerLogoTxt">Designer e Desenvolvedor.</p>
+        <div>
 
-            </section>
+            <button>Currículo</button>
+            <br>
+            <button>Projetos de Design</button>
+            <br>
+            <button>sobre</button>
+            <br>
+            <button>contato</button>
+            <br>
 
-            <nav class="headerNav">
-                <div>
-                    <button>Burguer<br>Button</button>
-                </div>
-            </nav>
         </div>
-
-        <h1 class="h1Txt"> Desenvolvimento Front-End<br>orientado a soluções de Design.</h1>
-
-    </header>
-
-    <div class="subHeader">
-        <section >
-            <p class="subHeaderTxt">Integro práticas de <em>design</em> e <em>computação gráfica</em> para oferecer soluções sob medida ao seu empreendimento.</p>
-            <p class="subHeaderTxt2">Faça seu website um canal de comunicação e atendimento assertivo a seus clientes.</p>
-        </section>
-
-        <div class="subHeaderButton">
-            <button> <ins>Entre já em contato!</ins> </button>
-        </div>
-
+        
     </div>
 
-        <div class="designSolution" id="bd2">
+<div class="bodySideMenuWrapper">
 
-            <div id="canvasBack2"></div>
+    <div class="sideNavMenu" id="popMenu" >
 
-            <h2> Projetos realizados:</h2>
+        <div class="sideMenuButtonsDiv">
 
-            <div class="cardGridWrapper">
+            <button>Currículo</button>
+            <br>
+            <button>Projetos de Design</button>
+            <br>
+            <button>sobre</button>
+            <br>
+            <button>contato</button>
+            <br>
+
+        </div>
+        
+    </div>
+
+    <div class="pageBody">
+
+        <header class="headerProjs">
+            <div class="headerUpperProjs">
+    
+                <div class="logoAndBreadProjs">
+    
+                    <div class="logoTxtProjs">
+    
+                        <p class="headerLogoTxt">João Pedro Fernandes Borges</p>
+                        <p class="headerLogoTxt">Designer e Desenvolvedor.</p>
+    
+                    </div>
+    
+                    <nav class="breadCrumb" id="crumb1">
+                        <a href="./index.html" > HOME </a> <span> > </span>
+                        <a href="projs.html" > Galeria de Projetos </a>
+                        <span>></span>
+                    </nav>
+    
+                    
+    
+                </div>
+                
+    
+                <nav class="headerNav">
+    
+                    <svg style="position:absolute; z-index:0; width:28;" viewBox="50 50 800 800" version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve">
+                    <polygon id="XMLID_1_" fill="#CE11D3" points="-99.8,368.1 310.2,-6.4 909.8,71.7 1013,470.5 540,552.9 "/>
+                    </svg>
+    
+                    <div class="buttonContent" style="">
+    
+                        <button style="background:transparent; border:none;" onclick="war(); menuShow()">Burguer<br>Button</button>
+    
+                    </div>
+    
+                    
+                </nav>
+                
+            </div>
+    
+            <div class="h1DivProjs">
+    
+                <h1 class="h1Txt"> Andreoid - Personagem 3D animado para Website</h1>
+    
+                <p class="projDate"> 17/01/2023 - 15:11  </p>
+    
+    
+            </div>
+    
+        </header>
+
+
+        <div class="projContent">
+
+            <!--
+
+            <div class="threeDiv">
+
+                <div id="ID3D">
+
+                    <p>Click me, I am interactive!</p>
+
+                </div>
+
+                <div id="modelControls"></div>
+
+            </div> -->
+
+
+            
+
+            <div class="projDescription">
+
+                
+
+                    <div class="txtAndModel">
+
+                        <div class="threeDiv">
+
+                            <div id="ID3D">
+        
+                                <p id="modelTxt" style="background:none;box-shadow:none;">Click me, I am interactive!</p>
+        
+                            </div>
+        
+                            <div id="modelControls"></div>
+
+                        </div>
+
+                        <section class="paragraph1">
+
+                            <p class="txt"> Com <em>responsividade</em> para performance em <em>mobile ou desktop</em>, ótimo para <em>páginas principais</em> que estão preocupadas em criar uma experiência <em>lúdica e interativa</em> com seu público.<br><br><em>Andreoid</em> nasceu em dezembro de 2022 em sua versão animada para Web, para atender da melhor maneira o desejo do programador e pesquisador <a href="https://andrelopes.dev/">André Lopes</a>.<br><br>André a princípio me procurou como ilustrador no intuito de deixar seu site e outras peças de comunicação mais chamativas a partir de um personagem.<br><br>Logo compreendi que muito mais que uma ilustração, um <em>personagem em 3d</em> resolveria em grande parte o que André procurava <em>e mais</em>, por prover facilmente <em>poses diversas</em> depois de pronto e um <em>acabamento</em> que funciona muito bem para <em>avatares</em>, além de poder ser <em>animado.</em> </p>
+    
+                        </section>
+
+                    </div>
+
+                
+                    <div class="emptySpace"></div>
+                
+                    <section class="paragraph2">
+
+                        <div class="slide1Wrapper">
+
+
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides fade">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="andreoid_04.png" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+                            
+                                <div class="mySlides fade">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="andreoid_05.png" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+                            
+                                <div class="mySlides fade">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="andreoid_07.png" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+        
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 6</div>
+                                    <img src="andreoid_08.png" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+        
+                                <div class="mySlides fade">
+                                    <div class="numbertext">5 / 6</div>
+                                    <img src="andreoid_404_3.png" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+        
+                                <div class="mySlides fade">
+                                    <div class="numbertext">6 / 6</div>
+                                    <img src="andreoid_404.png" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+                            
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            
+                            <br>
+                            
+                            <!-- The dots/circles -->
+                            <div  class="slide1Dots" style="">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="paragraph2Txt">
+
+                            <p>Personagens em 3D tem diferentes aplicações na Web, de jogos à chatbots, representações virtuais de produtos e mais.<br><br>No caso do Andreoid o intuito é transformá-lo em um chatbot com diferentes expressões viabilizado através de IA.<br><br>O personagem animado foi então aplicado no site de André, enquanto imagens estáticas foram utilizadas em peças de comunicação "institucional".<br><br>O desenvolvimento do personagem partiu do desenho a mão e a definição de um esboço, que foi seguida pela modelagem.</p>
+    
+
+                        </div>
+    
+                    </section>
+                
+
+                
+                <div class="slide2">
+
+                    <div class="slideshow-container2">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade">
+                        <div class="numbertext2">1 / 5</div>
+                        <img src="makeOf_1.jpg" style="width:100%">
+                        <div class="text"></div>
+                        </div>
+                    
+                        <div class="mySlides2 fade">
+                        <div class="numbertext2">2 / 5</div>
+                        <img src="makeOf_2.jpg" style="width:100%">
+                        <div class="text"></div>
+                        </div>
+                    
+                        <div class="mySlides2 fade">
+                        <div class="numbertext2">3 / 5</div>
+                        <img src="makeOf_3.jpg" style="width:100%">
+                        <div class="text"></div>
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <div class="numbertext2">4 / 5</div>
+                            <img src="makeOf_4.jpg" style="width:100%">
+                            <div class="text"></div>
+                        </div>
+
+                        <div class="mySlides2 fade">
+                            <div class="numbertext2">5 / 5</div>
+                            <img src="makeOf_5.png" style="width:100%">
+                            <div class="text"></div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div class="dotWrapper2">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                        <span class="dot2" onclick="currentSlide2(4)"></span>
+                        <span class="dot2" onclick="currentSlide2(5)"></span>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+            
+
+
+
+        </div>
+
+        <div class="subHeaderButtonProj">
+            <button> <ins>Entre em contato!</ins> </button>
+        </div>
+
+        <div class="designSolutionProj" id="bd2">
+
+                <div id="canvasBack2"></div>
+
+                <h2>0utros projetos:</h2>
 
                 <section class="cardsGrid">
 
-                    <a href="./proj_Andreoid/proj1.html">
+                    <a href="proj2.html">
 
-                        <div class="cardBody1">
-
-                                <div class="cardImgBox">
-                                    <img src="/andreoid/assets/gravuras_72-DBCU6bqy.jpg" alt="gravuras">
-                                    
-                                </div>
-
-                                <div class="cardTxtBox">
+                        <div class="cardBody2">
+                            <div class="cardImgBox">
+                                <img src="/andreoid/assets/gravuras_72-DBCU6bqy.jpg" alt="gravuras">
+                                
+                            </div>
+                            
+                            <div class="cardTxtBox">
 
                                     <div class="cardTitleAndTxt">
-                                    
-                                        <div class="cardTitle">
+                                            
+                                    <div class="cardTitle">
 
-                                            <p >Andreoid - Personagem 3D animado para Website</p>
-
-                                        </div>
-
-                                        <div class="cardTxt">
-
-                                            <p> Com responsividade para performance em mobile ou desktop, ótimo para páginas principais que estão preocupadas em criar uma experiência mais lúdica e interativa com seu público. Andreoid nasceu em dezembro de 2022 em sua versão animada para Web, para atender da melhor maneira o desejo do programador e pesquisador André Lopes. André queria um personagem para seu site e a princípio me procurou como ilustrador no intuito de deixar seu site e outras peças de comunicação mais chamativas. Logo compreendi que muito mais que uma ilustração, um personagem em 3d resolveria em grande parte o que André procurava, tanto por prover facilmente poses e um acabamento que funciona muito bem para personagens que servem de avatar, quanto por poder</p>
-
-                                        </div>
+                                    <p >Título do Card</p>
 
                                     </div>
 
-                                        <div class="cardTxtFooter">
-                                            <p> txt footer date 0/0/0 00:00</p>
+                                    <div class="cardTxt">
 
-                                        </div>
-                                
+                                        <p> Esse texto é uma descrição não muito longa mas suficiente para explicar cada um desses cards</p>
+
+                                    </div>
+
+                            </div>
+
+                                <div class="cardTxtFooter">
+                                    <p> txt footer date 0/0/0 00:00</p>
+
                                 </div>
-                            
-                            
+                        
+                            </div>
                         </div>
-
                     </a>
                     
                     <a href="proj2.html">
@@ -171,121 +413,11 @@
                     
                 </section>
 
+                <div class="designSolutionMore" id="link">
+                    <a href="http//:aykgfgkyagfk.com" >+ Galeria </a>
+                </div>
+
             </div>
-
-            <div class="designSolutionMore" id="link">
-                <a href="http//:aykgfgkyagfk.com" >+ Galeria </a>
-            </div>
-
-        </div>
-
-        <section class="contactSection">
-
-            <div class="contactDiv">
-
-                <div class="contactHeader">
-
-                    <div class="contactTitle">
-                        <p>Contato via form ou Whatsapp:</p>
-                    </div>
-
-                    <div class="contactHeaderButton">
-                        <button value="Whatsapp">Whatsapp</button>
-                    </div>
-
-                </div>
-
-                <div class="formDiv">
-
-                    <form class="form" name="form">
-
-                        <div>
-                            <label for="name" class="formLabel" id="1"> Nome: </label>
-                            <br>
-                            <input type="text" name="name">
-                        </div>
-
-                        <div>
-                            <label for="email" class="formLabel"> Email: </label>
-                            <br>
-                            <input type="email" name="email">
-                        </div>
-
-                        <div>
-                            <label for="solution" class="formLabel">Que solução você procura?</label>
-                            <br>
-                            <select name="solution">
-                                <option value="Illustration">Ilustração</option>
-                                <option value="Edit">Editoração</option>
-                                <option value="Anim">Animação/Motion</option>
-                                <option value="Content">Criação de Conteúdo</option>
-                                <option value="visualId">Identidade Visual</option>
-                                <option value="webDesign"> Criação de Website </option>
-                                <option value="game"> Game/interatividade </option>
-                                <option value="_" disabled selected>   -----   </option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="faleSobre" class="formLabel"> Conte sobre seu empreendimento: </label>
-                            <br>
-                            <textarea name="faleSobre"></textarea>
-                        </div>
-
-                        <div class="button">
-                            <button type="submit" form="form" value="Submit">Enviar</button>
-                        </div>
-
-                    </form>
-
-                </div>
-
-                <div class="contactInfo">
-                    <div>
-                        <p> (48) 9 88198669 </p>
-                        <p> contato.joao.pfb@gmail.com </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div>
-            <section class="about">
-
-                <div class="aboutTitle">
-                    <p>Sobre:</p>
-                </div>
-
-                <div class="portraitDiv">
-
-                    <img src="/andreoid/assets/croppedPic-BWS6_FEV.jpg" alt="portrait">
-
-                 </div>
-
-                 <div class="aboutMeTxt">
-                    <p> <b>Olá</b>, meu nome é <em>João Pedro</em>, e é <ins>comigo mesmo</ins> que você estará tratando ao entrar em contato. Sou <em class="2b" id="b2">designer</em> e <em class="2b" id="b2">artista visual</em> de formação, e atuando no campo da arte ciência e tecnologia, procuro <b id="b3">interseccionar</b> mídias e meios para ter um olhar integral sobre os produtos e serviços que ofereço. <ins>Bora ver o que podemos fazer para o seu projeto!</ins> </p>
-                 </div>
-
-                 <div class="date">
-                    <p>J.F.Borges</p>
-                 </div>
-
-            </section>
-        </div>
-
-        <div>
-            <section class="more">
-
-                <div>
-                    <button>+ Mais:</button>
-                </div>
-
-                <div class="moreTitle">
-                    <p>Mais +</p>
-                </div>
-
-            </section>
-        </div>
 
         <div>
             <footer>
@@ -312,57 +444,9 @@
             </footer>
         </div>
 
-        <p id="fragmentShader" hidden>
-            vec2 pos;
-            uniform float time;
-            uniform vec2 resolution;
-    
-            void main(void) {
-                vec2 pos = 2.0*gl_FragCoord.xy / resolution.y - vec2(resolution.x/resolution.y, 1.0);
-                float d = sqrt(pos.x*pos.x + pos.y*pos.y)*10.0;
-                gl_FragColor = vec4(1.0+cos(time*0.97+d), 1.0+cos(time*0.59+d), 1.0+cos(-0.83*time+d), 2.0)/2.0;
+    </div>
 
-                vec3 color = vec3(1.0);
-                vec2 st = gl_FragCoord.xy/resolution.xy;
-
-                st.x *= resolution.x/resolution.y;
-                color = vec3(0.933 + (0.1*(cos(st.x+(time/2.0)))),0.675 + (0.1*(sin(st.y+(time/3.0)))),0.518 - (.2*(abs(sin((time+10.0)/4.0)*pos.x))));
-                
-                gl_FragColor = vec4(color, 1.0);
-            }
-        </p>
-
-        <p id="fragmentShader2" hidden>
-
-            vec2 pos;
-            uniform float time;
-            uniform vec2 resolution;
-
-            void main(void) {
-
-                vec2 pos = 2.0*gl_FragCoord.xy / resolution.y - vec2(resolution.x/resolution.y, 1.0);
-                float d = sqrt(pos.x*pos.x + pos.y*pos.y)*10.0;
-            
-                vec3 color = vec3(1.0);
-                vec2 st = gl_FragCoord.xy/resolution.xy;
-                st.x *= resolution.x/resolution.y;
-                
-                color = vec3(st.x,st.y,abs(sin(time)));
-            color = vec3(0.584 + (0.02*(cos(st.x+(time/4.0)))),0.737 + (0.082*(sin(st.y+(time/2.0)))),0.8 - (0.3*(abs(sin((time+10.0)/3.0)* pos.x *pos.x))));
-                
-                vec3 color1 = vec3(0.584,0.737,0.8);
-            
-            
-            
-            
-                gl_FragColor = vec4(color, 1.0);
-            }
-
-        </p>
-
-        <div class="canvasHHH" id="ID3" style="width:30vw; height:30vw; overflow:hidden;">
-
-        </div>
+</div>
 
 
         
