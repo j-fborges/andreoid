@@ -1,9 +1,9 @@
 
 
 
- import * as THREE from '../three.js/build/three.module.js';
- import { GLTFLoader } from '../three.js/examples/jsm/loaders/GLTFLoader.js';
-import { RGBELoader } from '../three.js/examples/jsm/loaders/RGBELoader.js';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 
 
 //-------------------------------------------------------------------------------vvvvvv--------SLIDES-------------vvvvvvvvvvvvvvvvvvvvv----------------------------------
@@ -320,8 +320,8 @@ var mobile = window.mobileCheck();
           reflectivity: 0.0,
           sheen: 1.0,
           sheenRoughness: 0.3,
-          sheenColor: 0x0296a6,
-          clearcoat: 0.99,
+          // sheenColor: 0x0296a6,
+          clearcoat: 0.70,
           clearcoatRoughness: 0.36,
           specularIntensity: 1.0,
 					specularColor: 0xff3333,
@@ -452,7 +452,7 @@ var mobile = window.mobileCheck();
          model.children[1].add(shadowMesh);
             
          console.log(model);
-         spotLight = new THREE.SpotLight( 0x096bff, 50.0, 0, 0.3, 0.35,  1.1 );
+         spotLight = new THREE.SpotLight(0x7fadf3, 200.0, 0, 0.3, 0.35,  1.1 );
 
 				
 				spotLight.position.set( 10, 10+4, 20-4 );
@@ -471,7 +471,7 @@ var mobile = window.mobileCheck();
 
 				scene.add( spotLight );
 
-        spotLight2 = new THREE.SpotLight( 0xf22400, 80.0, 40, 0.2, 0.3,  1.2 );
+        spotLight2 = new THREE.SpotLight(0xff9987, 100.0, 40, 0.2, 0.3,  1.2 );
 
 				
 				spotLight2.position.set( -5, 15+4, 10-4 );
@@ -490,7 +490,7 @@ var mobile = window.mobileCheck();
 				scene.add( spotLight2 );
 
 
-        spotLight3 = new THREE.SpotLight( 0xffaa0d, 16.0, 2, 0.5, 1.00,  2 );
+        spotLight3 = new THREE.SpotLight( 0xffaa0d, 800.0, 2, 0.5, 1.00,  2 );
 
 				
 				spotLight3.position.set( -.3, 0.1, 0 );
@@ -507,9 +507,9 @@ var mobile = window.mobileCheck();
         spotLight3.shadow.camera.far = 50;
         spotLight3.shadow.camera.fov = 60;
 
-				//scene.add( spotLight3 );
+				scene.add( spotLight3 );
 
-        spotLight4 = new THREE.SpotLight( 0xeaaf00, 100.0, 40, 0.2, 0.8,  1.0 );
+        spotLight4 = new THREE.SpotLight(0xffdd77, 600.0, 40, 0.2, 0.8,  1.0 );
 
 				
 				spotLight4.position.set( 25, 3+4, -9-4 );
@@ -524,6 +524,24 @@ var mobile = window.mobileCheck();
         spotLight4.shadow.camera.near = .01;
         spotLight4.shadow.camera.far = 50;
         spotLight4.shadow.camera.fov = 60;
+
+				scene.add( spotLight4 );
+
+        // spotLight5 = new THREE.SpotLight( 0xeaaf00, 600.0, 40, 0.2, 0.8,  1.0 );
+
+				
+				// spotLight5.position.set( 25, 3+4, -9-4 );
+        // spotLight5.target = baseCaboAntena;
+				// spotLight5.castShadow = true;
+
+        // //spotLight4.shadow.mapSize.width = 2048;
+        // //spotLight4.shadow.mapSize.height = 2048;
+        // spotLight5.shadow.mapSize.width = 512;
+        // spotLight5.shadow.mapSize.height = 512;
+        
+        // spotLight5.shadow.camera.near = .01;
+        // spotLight5.shadow.camera.far = 50;
+        // spotLight5.shadow.camera.fov = 60;
 
 				scene.add( spotLight4 );
 
@@ -582,17 +600,17 @@ var mobile = window.mobileCheck();
             boca.material = materialRosto;
             
             cabeça.material = materialCabeça;
-            corpo.material = materialCorpo;
-            braçoDireito.material = materialBraço;
-            braçoEsquerdo.material = materialBraço;
+            // corpo.material = materialCorpo;
+            // braçoDireito.material = materialBraço;
+            // braçoEsquerdo.material = materialBraço;
 
-            maoDireita.material = materialMao;
-            maoEsquerda.material = materialMao;
-            baseAntena.material = materialMao;
-            baseCaboAntena.material = materialMao;
+            // maoDireita.material = materialMao;
+            // maoEsquerda.material = materialMao;
+            // baseAntena.material = materialMao;
+            // baseCaboAntena.material = materialMao;
 
-            caboAntena.material = materialCabo;
-            esferaAntena.material = materialEsfera;
+            // caboAntena.material = materialCabo;
+            // esferaAntena.material = materialEsfera;
             
           }
           
@@ -688,7 +706,7 @@ camera.fov = +1*35;
 
 //----------------------------------------------------------APAGAR ABAIXO QUANDO O ANGULO E A POSICAO DA IMAGEM ESTIFEREM DEFINIDAS-----------------  
 
-import { OrbitControls } from '../three.js/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 const controls = new OrbitControls(camera, renderer.domElement );
 const gridHelper = new THREE.GridHelper( 100, 100 );
 

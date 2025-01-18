@@ -5,9 +5,9 @@ import './indexStyle.css'
 
 
 
-import * as THREE from './three.js/build/three.module.js';
-import { GLTFLoader } from './three.js/examples/jsm/loaders/GLTFLoader.js';
-import { RGBELoader } from './three.js/examples/jsm/loaders/RGBELoader.js';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader.js';
 
 
 //--------------------------------------------------------------------------------- VARIAVEL "MOBILE" CHECA SE O NAVEGADOR É MOBILE-------------------------------------
